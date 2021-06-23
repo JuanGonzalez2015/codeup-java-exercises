@@ -59,14 +59,50 @@ public class ConsoleExercises {
 //Integer.parseInt(sc.next());
 //
 
-        Scanner sizeOfCodeup = new Scanner(System.in);
+//        Scanner sizeOfCodeup = new Scanner(System.in);
+//
+//        System.out.print("Enter a string: ");
+//
+//        String userInput = sizeOfCodeup.next();
+//
+//        System.out.printf("You have entered: %s\n", userInput);
 
-        System.out.print("Enter a string: ");
+//        double pi = 3.14159;
+//        System.out.printf("The value of PI is approx: %.2f.", pi);
 
-        String userInput = sizeOfCodeup.next();
+//        Scanner sc = new Scaner(System.in);
+//        System.out.println("Please enter an integer:");
+//        int userInput = sc.nextInt();
 
-        System.out.printf("You have entered: %s\n", userInput);
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Please enter three words:");
+//
+//        String userInput1 = sc.next();
+//        String userInput2 = sc.next();
+//        String userInput3 = sc.next();
+//
+//        System.out.println(userInput1);
+//        System.out.println(userInput2);
+//        System.out.println(userInput3);
+//
 
+//        Scanner sc = new Scaner(System.in);
+//        sc.useDelimiter(".");
+//        System.out.println("Please enter three words");
+//        String userInput1 = sc.nextLine();
+//
+//        System.out.println(userInput1);
+
+
+        Scanner sc = new Scaner(System.in);
+//        int length = Integer.parseInt(sc.nextLine());
+//        int width = Integer.parseInt(sc.nextLine());
+
+        float length = float.parseFloat(sc.nextLine());
+        float width = float.parseFloat(sc.nextLine());
+
+        System.out.printf("Perimieter: %s\n",(2 * length) + (2 * width));
+        System.out.printf("Area: %s", length * width);
  }
 }
 
