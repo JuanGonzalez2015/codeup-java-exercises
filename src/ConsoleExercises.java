@@ -94,15 +94,45 @@ public class ConsoleExercises {
 //        System.out.println(userInput1);
 
 
-        Scanner sc = new Scaner(System.in);
+        Scanner sc = new Scanner(System.in);
 //        int length = Integer.parseInt(sc.nextLine());
 //        int width = Integer.parseInt(sc.nextLine());
 
-        float length = float.parseFloat(sc.nextLine());
-        float width = float.parseFloat(sc.nextLine());
+//        float length = float.parseFloat(sc.nextLine());
+//        float width = float.parseFloat(sc.nextLine());
+//
+//        System.out.printf("Perimieter: %s\n",(2 * length) + (2 * width));
+//        System.out.printf("Area: %s", length * width);
 
-        System.out.printf("Perimieter: %s\n",(2 * length) + (2 * width));
-        System.out.printf("Area: %s", length * width);
+//        String myFaveAnimal = "frog";
+//        System.out.println(myFaveAnimal);
+//
+//        int chanceOfRain = 60;
+//        if(chanceOfRain >= 50){
+//            System.out.println("stay inside");
+//        }
+
+//        boolean isWarm = true;
+//        boolean isSunny = true;
+//        if(isWarm | isSunny){
+//            System.out.println("go swimming");
+//        }
+//
+//        if(isWarm | isSunny){
+//            System.out.println("go swimming");
+//        }
+
+        String myName = "Laura";
+        String yourName = "Tifanny";
+
+
+        System.out.println(myName.equals(yourName));
+        System.out.println(myName.equalsIgnoreCase(yourName));
+
+        if(yourName.equals(myName)){
+            System.out.println("we are twins that is it.");
+        }
  }
 }
+
 
