@@ -12,7 +12,16 @@ public class JavaPractice {
                                 "Casey", "Dorian", "Tristan", "Jordy"};
                 int randomNum = (int) (Math.random() * 28);
                 String randomName = studentsArr[randomNum];
+                String userInput = "Juan";
+        System.out.print("What is your name? ");
+        System.out.println();
 
+        String firstName = sc.next();
+        System.out.printf("you entered %s\n" , firstName);
+        if(firstName.equals(userInput)){
+            System.out.println("woah! you guessed the random name");
+        }else{
+            System.out.printf("you entered the wrong name");
+        }
             }
         }
-
