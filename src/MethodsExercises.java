@@ -1,4 +1,10 @@
+import java.util.Scanner;
+
 public class MethodsExercises {
+
+    public static void main(String[] args){
+        getInteger(1,10);
+    }
 
     // syntax
     // public - how visible your method is to other classes
@@ -32,17 +38,35 @@ public class MethodsExercises {
 //    public static String myTeam(String team) {
 //        System.out.println("the best team in the world");
 //        return myTeam;
+//
+//        public static void main(String[] args) {
+//        System.out.println("What is your favorite basketball team");
+//
+//        System.out.println(team("that is the best team"));
+//    }
+//
+//    public static String team(String myTeam) {
+//        System.out.println("DPR Basketball Team: ");
+//        return myTeam;
 
-        public static void main(String[] args) {
-        System.out.println("What is your favorite basketball team");
-
-        System.out.println(team("that is the best team"));
-    }
-
-    public static String team(String myTeam) {
-        System.out.println("DPR Basketball Team: ");
-        return myTeam;
 
 
+        public static int getInteger(int min, int max){
+            Scanner scanner = new Scanner(System.in);
+            String userChoice ="";
+            int userInput = 0;
+            do{
+                System.out.printf("Enter int between %d-%d", min, max);
+                userInput = scanner.nextInt();
+                if(userInput > min && userInput < max){
+                    System.out.println("in range");
+                    break;
+                }else{
+                    System.out.println("not in range");
+                }
+                System.out.println("do you want to continue? (y/n)");
+                userChoice = scanner.next();
+            }while (!userChoice.equalsIgnoreCase("n"));
+        return userInput;
 }
 }
