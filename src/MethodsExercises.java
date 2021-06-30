@@ -50,23 +50,39 @@ public class MethodsExercises {
 //        return myTeam;
 
 
+//
+//        public static int getInteger(int min, int max){
+//            Scanner scanner = new Scanner(System.in);
+//            String userChoice ="";
+//            int userInput = 0;
+//            do{
+//                System.out.printf("Enter int between %d-%d", min, max);
+//                userInput = scanner.nextInt();
+//                if(userInput > min && userInput < max){
+//                    System.out.println("in range");
+//                    break;
+//                }else{
+//                    System.out.println("not in range");
+//                }
+//                System.out.println("do you want to continue? (y/n)");
+//                userChoice = scanner.next();
+//            }while (!userChoice.equalsIgnoreCase("n"));
+//        return userInput;
 
-        public static int getInteger(int min, int max){
-            Scanner scanner = new Scanner(System.in);
-            String userChoice ="";
-            int userInput = 0;
-            do{
-                System.out.printf("Enter int between %d-%d", min, max);
-                userInput = scanner.nextInt();
-                if(userInput > min && userInput < max){
-                    System.out.println("in range");
-                    break;
-                }else{
-                    System.out.println("not in range");
-                }
-                System.out.println("do you want to continue? (y/n)");
-                userChoice = scanner.next();
-            }while (!userChoice.equalsIgnoreCase("n"));
-        return userInput;
+
+    public static int getInteger(int min, int max){
+
+    int userInput = 0;
+        System.out.printf("Please enter a number between %S and %s:\n", min, max);
+    Scanner sc = new Scanner(System.in);
+
+    userInput = sc.nextInt();
+
+    if (userInput > max || userInput < min){
+        getInteger(min, max);
+    }
+
+    return userInput;
+
 }
 }
