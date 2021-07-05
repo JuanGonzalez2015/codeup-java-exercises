@@ -1,7 +1,10 @@
+import java.util.Scanner;
+
 public class Arrays {
 
     public static void main (String[] args){
        int[] intArray = getIntArray();
+
     }
 
     public static int[] getIntArray(){
@@ -15,5 +18,18 @@ public class Arrays {
             intArray[i] = i * 2;
         }
       return intArray;
+    }
+
+    public static String[] getNameArray(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("how many names do you wnat to enter");
+         int namesLength = scanner.nextInt();
+         String[] namesArr = new String[namesLength];
+
+         for (int i = 0; i < namesLength; i++){
+             namesArr[i] = scanner.next();
+
+         }
+         return namesArr;
     }
 }
