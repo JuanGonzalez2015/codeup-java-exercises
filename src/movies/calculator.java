@@ -1,4 +1,4 @@
-package warmup;
+package movies;
 
 import java.util.Scanner;
 

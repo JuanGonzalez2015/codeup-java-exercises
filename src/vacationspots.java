@@ -1,6 +1,3 @@
-package warmup;
-
-
 // TODO: Create a method which will return a String[] containing the user's favorite vacation spots
 //  -> Each time the user inputs a new vacation spot, reset the array to be one element longer in length
 //  -> Then, add the old elements

@@ -1,5 +1,3 @@
-package warmup;
-
 public class solution {
 }
 

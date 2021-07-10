@@ -1,5 +1,3 @@
-package warmup;
-
 public class PrintUpperCaseLetterString{
     public static void main(String[] args) {
         String str = "We Are An American Band";
