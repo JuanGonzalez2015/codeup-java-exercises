@@ -1,10 +1,10 @@
 import java.util.Scanner;
-
-public class MethodsExercises {
-
-    public static void main(String[] args){
-        getInteger(1,10);
-    }
+//
+//public class MethodsExercises {
+//
+//    public static void main(String[] args){
+//        getInteger(1,10);
+//    }
 
     // syntax
     // public - how visible your method is to other classes
@@ -70,19 +70,19 @@ public class MethodsExercises {
 //        return userInput;
 
 
-    public static int getInteger(int min, int max){
-
-    int userInput = 0;
-        System.out.printf("Please enter a number between %S and %s:\n", min, max);
-    Scanner sc = new Scanner(System.in);
-
-    userInput = sc.nextInt();
-
-    if (userInput > max || userInput < min){
-        getInteger(min, max);
-    }
-
-    return userInput;
-
-}
-}
+//    public static int getInteger(int min, int max){
+//
+//    int userInput = 0;
+//        System.out.printf("Please enter a number between %S and %s:\n", min, max);
+//    Scanner sc = new Scanner(System.in);
+//
+//    userInput = sc.nextInt();
+//
+//    if (userInput > max || userInput < min){
+//        getInteger(min, max);
+//    }
+//
+//    return userInput;
+//
+//}
+//}
