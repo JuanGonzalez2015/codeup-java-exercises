@@ -1,9 +1,9 @@
 package shapes;
 
-public class Rectangle extends Quadrilateral implements Measurable {
+public class Square extends Quadrilateral {
 
-    public Rectangle(int length, int width) {
-        super(length, width);
+    public Square(int side) {
+        super(side, side);
     }
 
     @Override
